@@ -64,6 +64,7 @@ The clustering process included:
 │   ├── `feature_engineering.py` - Implements parameter weighting.  
 │   ├── `clustering.py` - Applies DBSCAN for clustering.  
 │   ├── `evaluation.py` - Evaluates clustering results.  
+|── requirements.txt
 │── `README.md`
 
 ## How to Run the Code
