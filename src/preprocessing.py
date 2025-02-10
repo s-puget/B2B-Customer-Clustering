@@ -38,7 +38,10 @@ def preprocess_data(df):
     
     return df
 
-if __name__ == "__main__":
+def run():
     df = pd.read_csv("merged_data.csv")
     df = preprocess_data(df)
     df.to_csv("processed_data.csv", index=False)
+
+if __name__ == "__main__":
+    run()

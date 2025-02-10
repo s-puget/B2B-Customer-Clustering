@@ -7,8 +7,10 @@ def apply_dbscan(df, eps=1.5):
     df["cluster"] = dbscan_labels
     return df
 
-if __name__ == "__main__":
+def run():
     df = pd.read_csv("weighted_data.csv")
     df = apply_dbscan(df)
     df.to_csv("clustered_data.csv", index=False)
-    df.to_csv("clustered_data.csv", index=False)
+
+if __name__ == "__main__":
+    run()
