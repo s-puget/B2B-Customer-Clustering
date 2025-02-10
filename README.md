@@ -46,6 +46,7 @@ The clustering process included:
 - **Modeling**: Applying algorithms such as K-Means, DBSCAN, or hierarchical clustering.
 - **Evaluation**: Assessing clusters using metrics like silhouette score, Davies-Bouldin Index, and Calinski-Harabasz Index.
 - **Refinement**: Improving clustering performance by optimizing parameters.
+- **Visualization**: Using **PCA** to visualize clusters.
 
 ## Repository Structure
 
@@ -75,14 +76,10 @@ Ensure you have Python and required libraries installed. You can install depende
   pip install -r requirements.txt
 ```
 2. **Run the pipeline**
-  Execute the scripts in order:
+  Execute:
   ```bash
-  python src/data_loader.py
-  python src/preprocessing.py
-  python src/feature_engineering.py
-  python src/clustering.py
-  python src/evaluation.py
+  python src/main.py
 ```
-This will generate a clustered dataset and output evaluation metrics.
+This will generate a clustered dataset and output evaluation metrics and PCA vizualisation graph.
 
 
