@@ -11,7 +11,10 @@ def evaluate_clustering(df):
         return {"Silhouette Score": silhouette, "Davies-Bouldin Score": davies_bouldin, "Calinski Harabasz Score": chi_score}
     return {"Silhouette Score": None, "Davies-Bouldin Score": None, "Calinski Harabasz Score": None}
 
-if __name__ == "__main__":
+def run():
     df = pd.read_csv("clustered_data.csv")
     scores = evaluate_clustering(df)
-    print(scores)
+    print(scores)    
+
+if __name__ == "__main__":
+    run()

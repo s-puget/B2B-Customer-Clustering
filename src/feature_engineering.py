@@ -5,7 +5,10 @@ def weight_parameters(df):
     df.loc[:, (df.nunique() == 2)] *= 3
     return df
 
-if __name__ == "__main__":
+def run():
     df = pd.read_csv("processed_data.csv")
     df = weight_parameters(df)
     df.to_csv("weighted_data.csv", index=False)
+
+if __name__ == "__main__":
+    run()
