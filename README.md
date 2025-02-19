@@ -48,7 +48,9 @@ The clustering process included:
 │   ├── `preprocessing.py` - Cleans and encodes data.  
 │   ├── `feature_engineering.py` - Implements parameter weighting.  
 │   ├── `clustering.py` - Applies DBSCAN for clustering.  
-│   ├── `evaluation.py` - Evaluates clustering results.
+│   ├── `evaluation.py` - Evaluates clustering results.  
+│   ├── `visualization.py` - Creates a graph using PCA to visualize clusters.  
+│   ├── `main.py` - Runs all code.  
 ├── `clustering.ipynb`  
 │── `presentation.pdf`  
 │── `requirements.txt`  
