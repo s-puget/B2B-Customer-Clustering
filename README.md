@@ -16,26 +16,11 @@ The workflow involved:
 3. **Merging Data**: Integrating multiple tables to form a comprehensive client dataset.
 4. **Clustering Analysis**: Applying machine learning techniques to segment clients.
 
-## Notebooks
+## Clustering Notebook  
 
-The project consists of four main Jupyter notebooks:
+The main notebook of the project is **clustering.ipynb**. This notebook serves as the core of the analysis, bringing together processed data from previous steps. It merges `client_summary_segmentation.csv` and `client_transaction_product_file.csv` on `client_id` to create a unified dataset.  
 
-1. **transactions_exploration.ipynb**  
-   - EDA on transaction data.  
-
-2. **google_analytics_exploration.ipynb**  
-   - EDA and feature engineering on website interaction data.  
-   - Outputs a processed dataset: `client_summary_segmentation.csv`.
-
-3. **client_product_transaction_exploration.ipynb**  
-   - EDA and feature engineering on client, product, and transaction data.  
-   - Outputs a processed dataset: `client_transaction_product_file.csv`.
-
-4. **clustering.ipynb** (Main focus of my contribution)  
-   - Merges `client_summary_segmentation.csv` and `client_transaction_product_file.csv` on `client_id` to create a unified dataset.  
-   - Performs EDA and additional feature engineering.  
-   - Develops and refines clustering models.  
-   - Evaluates and interprets clustering results.
+After conducting exploratory data analysis (EDA) and additional feature engineering, the focus shifts to developing and refining clustering models. The notebook evaluates different clustering techniques, interprets the results, and provides insights into client segmentation.  
 
 ## Clustering Methodology
 
@@ -58,13 +43,13 @@ The clustering process included:
 │   ├── `transactions_exploration.ipynb`  
 │   ├── `google_analytics_exploration.ipynb`  
 │   ├── `client_product_transaction_exploration.ipynb`  
-│   ├── `clustering.ipynb`  
 │── 📁 src  
 │   ├── `data_loader.py` - Loads and merges datasets.  
 │   ├── `preprocessing.py` - Cleans and encodes data.  
 │   ├── `feature_engineering.py` - Implements parameter weighting.  
 │   ├── `clustering.py` - Applies DBSCAN for clustering.  
-│   ├── `evaluation.py` - Evaluates clustering results.  
+│   ├── `evaluation.py` - Evaluates clustering results.
+├── `clustering.ipynb`  
 │── `presentation.pdf`  
 │── `requirements.txt`  
 │── `README.md`
